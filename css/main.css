@@ -124,7 +124,20 @@ body {}
   -webkit-transform-origin: bottom;
 }
 
-#hours {
+#sec-pointer {
+  position: absolute;
+  height: 120%;
+  width: 10px;
+  left: 0;
+  right: 0;
+  bottom: 120%;
+  top: 0px;
+  margin: auto;
+  background: rgba(0, 0, 0, .3);
+  -webkit-transform-origin: bottom;
+}
+
+/* #hours {
   position: absolute;
   background: rgba(0, 0, 0, .3);
   height: 550px;
@@ -156,8 +169,7 @@ body {}
   -ms-transform: rotate(-30deg);
   -o-transform: rotate(-30deg);
   transform: rotate(-30deg);
-}
-
+} */
 #clock {
   display: flex;
   display: -webkit-box;

@@ -29,6 +29,7 @@ function showTime() {
   var color3 = checkColor(color1, color2);
   var hourDeg = 30 * ((hour % 12));
   var minDeg = 6 * min;
+  var secDeg = 6 * sec;
 
   hour = insert0(hour);
   min = insert0(min);
@@ -40,13 +41,13 @@ function showTime() {
     hour + ':' +
     min + ':' +
     sec;
-
   document.getElementById('clock').style.backgroundColor = color1;
   document.getElementById('clock').style.width = size + 'px';
   document.getElementById('clock').style.height = size + 'px';
   document.getElementById('clock').style.borderWidth = min + 'px';
   document.getElementById('hour-pointer').style.webkitTransform = 'rotate(' + hourDeg + 'deg)';
   document.getElementById('min-pointer').style.webkitTransform = 'rotate(' + minDeg + 'deg)';
+  document.getElementById('sec-pointer').style.webkitTransform = 'rotate(' + secDeg + 'deg)';
   document.getElementsByTagName('body')[0].style.backgroundColor = color3
   size += 100;
   setTimeout(showTime, 1000);
