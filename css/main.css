@@ -181,7 +181,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  border-color: black;
+  /* border-color: rgba(0, 0, 0, .3); */
   border-style: solid;
   position: relative;
   position: absolute;
@@ -190,6 +190,7 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   color: #000;
+  /* opacity: 0.8; */
   z-index: 30;
 }
 

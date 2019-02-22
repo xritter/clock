@@ -34,7 +34,7 @@ function showTime() {
   hour = insert0(hour);
   min = insert0(min);
   sec = insert0(sec);
-  size >= 600 ? size = 200 : size;
+  size >= 400 ? size = 200 : size;
 
   document.getElementById('clock').innerHTML =
     '<h1>' +
