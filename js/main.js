@@ -48,7 +48,7 @@ function showTime() {
   document.getElementById('hour-pointer').style.webkitTransform = 'rotate(' + hourDeg + 'deg)';
   document.getElementById('min-pointer').style.webkitTransform = 'rotate(' + minDeg + 'deg)';
   document.getElementById('sec-pointer').style.webkitTransform = 'rotate(' + secDeg + 'deg)';
-  document.getElementsByTagName('body')[0].style.backgroundColor = color3
+  document.getElementsByTagName('body')[0].style.backgroundColor = color3;
   size += 100;
   setTimeout(showTime, 1000);
 }
